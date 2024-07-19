@@ -17,6 +17,13 @@
         margin-bottom: 11px;
         font-family: 'Gilroy', sans-serif;
     }
+    .name {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 11px;
+        font-family: 'Gilroy', sans-serif;
+        color: black;
+    }
 
     span {
         color: #0047FF;

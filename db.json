@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "id": "6eb",
+      "email": "sher1888@mail.ru",
+      "name": "Sherali",
+      "sureName": "Vivo",
+      "password": "deffde12"
+    },
+    {
+      "id": "6edb",
+      "email": "sherzod1700@mail.ru",
+      "name": "Sherik",
+      "sureName": "Joh",
+      "password": "dedede12"
+    },
+    {
+      "id": "8032",
+      "email": "maktraxer@mail.ru",
+      "name": "Antonio",
+      "sureName": "Banderas",
+      "password": "Antonio4321"
+    },
+    {
+      "id": "650f",
+      "email": "maktraxer@mail.ru",
+      "name": "dede",
+      "sureName": "Joh",
+      "password": "dedede12"
+    },
+    {
+      "id": "3d38",
+      "email": "nurillaevsherzod07@gmail.com",
+      "name": "Sherik",
+      "sureName": "Joh",
+      "password": "deffde12"
+    },
+    {
+      "id": "b5b6",
+      "email": "nurillaevsherzod07@gmail.com",
+      "name": "Sherik",
+      "sureName": "Joh",
+      "password": "deffde12"
+    },
+    {
+      "id": "3e5c",
+      "email": "sherzod1700@mail.ru",
+      "name": "Sherzod",
+      "sureName": "Nurillayev",
+      "password": "Heavenly17rich"
+    }
+  ]
+}
