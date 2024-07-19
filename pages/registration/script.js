@@ -1,4 +1,4 @@
-import axios from "axios";
+import { getData, postData } from "../../libs/http";
 
 let regEx = {
     email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
@@ -8,10 +8,7 @@ let regEx = {
 };
 
 let form = document.forms.registration
-
 let inputs = document.querySelectorAll('input')
-
-let url = "http://localhost:8080/"
 
 form.onsubmit = (e) => {
     e.preventDefault()
@@ -25,10 +22,12 @@ form.onsubmit = (e) => {
         fn.forEach((value, key) => {
             user[key] = value
         })   
-        axios.get(url + "users")
-        .then(ress => console.log(ress))
+
+        getData("users")
+        .then(res => console.log(res))
         .catch(error => console.log(error))
-        axios.post(url + "users", user)
+
+        postData("users", user)
         .then(res => {
             localStorage.setItem("userId", res.data.id)
             window.location.replace('/')

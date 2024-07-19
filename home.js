@@ -1,17 +1,14 @@
-import axios from "axios";
 import { header } from "./components/head.js";
-
+import { getData } from "./libs/http.js";
 header()
-
-let url = "http://localhost:8080/users"
 
 let ls = localStorage.getItem("userId")
 
-axios.get(`${url}/${ls}`)
+getData("users" + '/' + ls)
 .then(res => {
     data(res.data)
 })
-.catch(error => console.error(error))
+.catch(error => console.log(error))
 
 function data(res) {
     let name = document.querySelector(".name")

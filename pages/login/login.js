@@ -1,17 +1,13 @@
-import axios from "axios";
-
-let url = "http://localhost:8080/users"
+import { getData } from "../../libs/http";
 
 let form = document.forms.login
 let inps = document.querySelectorAll('input')
 let err = document.querySelector('span')
 let txt = document.querySelector('h1')
 
-axios.get(url)
-.then(res => {
-    login(res.data)
-})
-.catch(error => console.error(error))
+getData("users")
+.then(res => login(res.data))
+.catch(error => console.log(error))
 
 function login(res) {
     form.onsubmit = (e) =>  {
