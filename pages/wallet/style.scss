@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.wallet {
+    display: flex;
+    gap: 30px;
+    margin: 21px 0;
+    .item {
+        width: 289px;
+        height: 180px;
+        border-radius: 20px;
+        position: relative;
+            h2 {
+                color: #fff;
+                position: absolute;
+                top: 20px;
+                left: 25px;
+                font-weight: 500;
+                font-size: 24px;
+                font-family: 'Gilroy', sans-serif;
+            }
+            p {
+                color: #fff;
+                position: absolute;
+                bottom: 20px;
+                left: 25px;
+                font-weight: 700;
+                font-size: 14px;
+                font-family: 'Gilroy', sans-serif;
+            }
+    }
+    
+    #one {
+        background: linear-gradient(84.37deg, #D7816A 2.27%, #BD4F6C 92.26%);
+    }
+    #two {
+        background: linear-gradient(84.37deg, #5F0A87 2.27%, #A4508B 92.26%);
+    }
+    #three {
+        background: linear-gradient(84.37deg, #20BF55 2.27%, #01BAEF 92.26%);
+    }
+    #four {
+        background: linear-gradient(84.37deg, #380036 2.27%, #0CBABA 92.26%);
+    }
+}
+
+.wallet_block {
+    button {
+        width: 438px;
+        height: 56px;
+        font-family: Gilroy;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22.05px;
+        color:#FFFFFF;
+        background-color: #0047FF;
+        border: 0;
+        border-radius: 10px;
+        margin-top: 44px;
+        // text-align: left;        
+    }
+}

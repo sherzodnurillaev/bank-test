@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.latest_transactions {
+    margin: 74px 0 109px;
+
+    h2 {
+        font-size: 24px;
+        font-weight: 500;
+        font-family: 'Gilroy', sans-serif;
+    }
+    table {
+        border-collapse: collapse;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+    th {
+        color: #B9C0D1;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 32px 0 21px;
+        font-family: 'Gilroy', sans-serif;
+    }
+    td {
+        border-bottom: 1px solid #B9C0D1;
+        padding: 10px 0;
+        font-weight: 500;
+        font-size: 14px;
+        font-family: 'Gilroy', sans-serif;
+    }
+
+    .one {
+        width: 180px;
+    }
+    .two {
+        width: 380px;
+    }
+    .three {
+        width: 300px;
+    }
+    .four {
+        width: 280px;
+    }
+    .five {
+        width: 100px;
+    }
+
+    a {
+        color: #0047FF;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Gilroy', sans-serif;
+    }
+}

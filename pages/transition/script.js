@@ -1,21 +1,23 @@
-import { header } from "./components/head.js";
-import { getData } from "./libs/http.js";
+import { header } from "../../components/head";
+import { headTxt } from "../../components/headTxt";
+import { getData } from "../../libs/http";
 header()
+headTxt()
 
 let ls = localStorage.getItem("userId")
 
 getData("users" + '/' + ls)
 .then(res => {
-    data(res.data)
+    wallet(res.data)
 })
 .catch(error => console.log(error))
 
-function data(res) {
-    let name = document.querySelector(".name")
-    let email = document.querySelector(".email")
+function wallet(res) {
     let emailHeader = document.querySelector('.right span')
+    let email = document.querySelector('.email')
+    let well = document.querySelector('.headTxt h1')
     emailHeader.innerText = res.email
-    name.innerText = res.sureName + ' ' + res.name
+    well.innerText = 'Мои транзакции'
     email.innerText = res.email
 }
 

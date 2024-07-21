@@ -16,9 +16,8 @@ img {
 }
 
 .block {
-    width: 300px;
+    width: 320px;
     text-align: center;
-    align-items: center;
         h1 {
             margin-bottom: 20px;
         }
@@ -36,6 +35,8 @@ form {
             border: 1px solid #000000;
             border-radius: 10px;
             height: 36px;
+            width: 300px;
+            margin-left: 7px;
         }
         input::placeholder {
             color: #000000;
@@ -47,6 +48,8 @@ form {
             border-radius: 10px;
             border: 0;
             margin-bottom: 28px;
+            width: 300px;
+            margin-left: 7px;
         }
 }
 

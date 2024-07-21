@@ -1,0 +1,16 @@
+.headTxt {
+    margin: 44px 0 74px;
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 11px;
+        font-family: 'Gilroy', sans-serif;
+    }
+
+    span {
+        color: #0047FF;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: 'Gilroy', sans-serif;
+    }
+}
