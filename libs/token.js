@@ -1,8 +1,8 @@
-function generateRandomToken(length) {
+export function generateRandomToken() {
     let num = "ABCDEFGHIJCLMNOPQYZabcdefghijklmnopqyz1234567890";
     let token = '';
 
-    for (let i = 0; i < length; i++) {
+    for (let i = 0; i < 10; i++) {
         let random = Math.floor(Math.random() * num.length);
 
         token += num[random];
@@ -10,6 +10,3 @@ function generateRandomToken(length) {
 
     return token;
 }
-
-let randomToken = generateRandomToken(10);
-console.log("Token: " + randomToken);

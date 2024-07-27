@@ -1,79 +1,92 @@
 {
   "users": [
     {
-      "id": "6eb",
-      "email": "sher1888@mail.ru",
-      "name": "Sherali",
-      "sureName": "Vivo",
-      "password": "deffde12"
-    },
-    {
-      "id": "6edb",
-      "email": "sherzod1700@mail.ru",
-      "name": "Sherik",
-      "sureName": "Joh",
-      "password": "dedede12"
-    },
-    {
-      "id": "8032",
-      "email": "maktraxer@mail.ru",
-      "name": "Antonio",
-      "sureName": "Banderas",
-      "password": "Antonio4321"
-    },
-    {
-      "id": "650f",
-      "email": "maktraxer@mail.ru",
-      "name": "dede",
-      "sureName": "Joh",
-      "password": "dedede12"
-    },
-    {
-      "id": "3d38",
-      "email": "nurillaevsherzod07@gmail.com",
-      "name": "Sherik",
-      "sureName": "Joh",
-      "password": "deffde12"
-    },
-    {
-      "id": "b5b6",
-      "email": "nurillaevsherzod07@gmail.com",
-      "name": "Sherik",
-      "sureName": "Joh",
-      "password": "deffde12"
-    },
-    {
-      "id": "3e5c",
-      "email": "sherzod1700@mail.ru",
-      "name": "Sherzod",
-      "sureName": "Nurillayev",
-      "password": "Heavenly17rich"
-    },
-    {
-      "id": "f9e9",
+      "id": "d013",
       "email": "sherzod1700@mail.ru",
       "name": "Sherik",
       "sureName": "Banderas",
-      "password": "dedede12"
+      "password": "dedede12",
+      "token": "JCHa7Z4kjF"
     },
     {
-      "id": "ddf0"
+      "id": "2ace",
+      "email": "nurillaevsherzod07@gmail.com",
+      "name": "Nicolas Lee",
+      "sureName": "Banderas",
+      "password": "Heavenly17rich",
+      "token": "mZGmJhAAG1"
+    }
+  ],
+  "wallets": [
+    {
+      "id": "41be",
+      "name": "humo",
+      "currency": "rub",
+      "userId": "d013"
     },
     {
-      "id": "df08"
+      "id": "bf44",
+      "name": "uzcard",
+      "currency": "sum",
+      "userId": "d013"
     },
     {
-      "id": "adaf"
+      "id": "bf44",
+      "name": "uzcard",
+      "currency": "sum",
+      "userId": "d013"
     },
     {
-      "id": "6b11"
+      "id": "6bee",
+      "name": "test",
+      "currency": "test",
+      "userId": "d013"
     },
     {
-      "id": "2e4c",
-      "email": "IlyasIlyasov007@mail.ru",
-      "name": "Ilyas",
-      "sureName": "Ilyasov",
-      "password": "21212121d"
+      "id": "8dca",
+      "name": "test",
+      "currency": "usd",
+      "userId": "d013"
+    },
+    {
+      "id": "d0c3",
+      "name": "Sherik",
+      "currency": "pur",
+      "userId": "2ace"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "c48c",
+      "transition": "humo",
+      "amount": "30000",
+      "category": "Buy a soska",
+      "date": "2024-07-26",
+      "userId": "d013"
+    },
+    {
+      "id": "89cf",
+      "transition": "uzcard",
+      "amount": "25000",
+      "category": "Buy a koka",
+      "date": "2024-07-26",
+      "userId": "d013"
+    },
+    {
+      "id": "e37b",
+      "transition": "uzcard",
+      "amount": "30000",
+      "category": "Buy a soska",
+      "date": "2024-07-26",
+      "userId": "d013"
+    },
+    {
+      "id": "0ad6",
+      "transition": "humo",
+      "amount": "25000",
+      "category": "test",
+      "date": "2024-07-26",
+      "userId": "d013"
     }
   ]
 }

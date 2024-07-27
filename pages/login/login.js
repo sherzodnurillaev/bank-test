@@ -22,6 +22,7 @@ function login(res) {
 
         res.forEach(elem => {
             if (elem.email == ob.email && elem.password == ob.password) {
+                localStorage.setItem("token", elem.token)
                 localStorage.setItem("userId", elem.id)
                 window.location.replace('/')
             } else if (elem.password !== ob.password) {
@@ -42,3 +43,5 @@ function login(res) {
         })
     }
 }
+
+

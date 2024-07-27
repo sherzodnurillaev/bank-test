@@ -1,4 +1,5 @@
 import { getData, postData } from "../../libs/http";
+import { generateRandomToken } from "../../libs/token";
 
 let regEx = {
     email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
@@ -10,9 +11,13 @@ let regEx = {
 let form = document.forms.registration
 let inputs = document.querySelectorAll('input')
 
+let ls = localStorage.getItem("userId")
+
 form.onsubmit = (e) => {
     e.preventDefault()
     let fn = new FormData(form)
+
+    let token = generateRandomToken()
 
     let user = {}
     validateRegistration()
@@ -21,15 +26,16 @@ form.onsubmit = (e) => {
     } else {
         fn.forEach((value, key) => {
             user[key] = value
-        })   
+        })
 
         getData("users")
         .then(res => console.log(res))
         .catch(error => console.log(error))
 
-        postData("users", user)
+        postData("users", { ...user, token})
         .then(res => {
             localStorage.setItem("userId", res.data.id)
+            localStorage.setItem("token", res.data.token)
             window.location.replace('/')
         })
         .catch(error => console.log(error))

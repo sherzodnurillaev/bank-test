@@ -1,5 +1,6 @@
 import { header } from "../../components/head";
 import { headTxt } from "../../components/headTxt";
+import { reloadWallet } from "../../libs/wallets";
 import { getData } from "/libs/http.js";
 header()
 headTxt()
@@ -19,8 +20,11 @@ function wallet(res) {
     email.innerText = res.email
 }
 
-let img = document.querySelector('.right img')
+getData("wallets" + "/" + ls)
+.then(res => reloadWallet(res.data))
+.catch(error => console.log(error))
 
+let img = document.querySelector('.right img')
 img.onclick = () => {
     window.location.replace("/pages/login/")
 }

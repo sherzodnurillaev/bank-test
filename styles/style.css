@@ -34,7 +34,8 @@
 }
 
 .wallet {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     margin: 21px 0;
     .item {
@@ -42,6 +43,7 @@
         height: 180px;
         border-radius: 20px;
         position: relative;
+        background: linear-gradient(84.37deg, #D7816A 2.27%, #BD4F6C 92.26%);
             h2 {
                 color: #fff;
                 position: absolute;
@@ -61,20 +63,20 @@
                 font-family: 'Gilroy', sans-serif;
             }
     }
-    
-    #one {
-        background: linear-gradient(84.37deg, #D7816A 2.27%, #BD4F6C 92.26%);
-    }
-    #two {
-        background: linear-gradient(84.37deg, #5F0A87 2.27%, #A4508B 92.26%);
-    }
-    #three {
-        background: linear-gradient(84.37deg, #20BF55 2.27%, #01BAEF 92.26%);
-    }
-    #four {
-        background: linear-gradient(84.37deg, #380036 2.27%, #0CBABA 92.26%);
-    }
 }
+
+.item:nth-child(1n) {
+    background: linear-gradient(84.37deg, #D7816A 2.27%, #BD4F6C 92.26%);
+  }
+.item:nth-child(2n) {
+    background: linear-gradient(84.37deg, #5F0A87 2.27%, #A4508B 92.26%);
+  }
+.item:nth-child(3n) {
+    background: linear-gradient(84.37deg, #20BF55 2.27%, #01BAEF 92.26%);
+  }
+.item:nth-child(4n) {
+    background: linear-gradient(84.37deg, #380036 2.27%, #0CBABA 92.26%);
+  }
 
 .wallet_block {
     h1 {

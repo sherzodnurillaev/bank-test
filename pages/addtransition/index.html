@@ -11,14 +11,20 @@
         <div class="block">
           <h1>Добавить транзакцию</h1>
   
-          <form name="registration">
-            <input type="text" placeholder="Из кошелька" name="wallet"/>
-            <input type="text" placeholder="Сумма" name="price"/>
+          <form name="transition">
+            <!-- <input type="text" placeholder="Из кошелька" name="wallet"/> -->
+
+            <select name="transition" class="transitions">
+              <!-- <option value="UzCard">UzCard</option>
+              <option value="Visa">Visa</option>
+              <option value="Humo">Humo</option> -->
+            </select>
+            <input type="text" placeholder="Сумма" name="amount"/>
             <input type="text" placeholder="Категория" name="category"/>
             <button type="submit">Добавить</button>
           </form>
         </div>
     </div>
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 </html>
