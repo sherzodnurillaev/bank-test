@@ -40,13 +40,13 @@
       "id": "6bee",
       "name": "test",
       "currency": "test",
-      "userId": "d013"
+      "userId": "2ace"
     },
     {
       "id": "8dca",
       "name": "test",
       "currency": "usd",
-      "userId": "d013"
+      "userId": "2ace"
     },
     {
       "id": "d0c3",
@@ -62,7 +62,23 @@
       "amount": "30000",
       "category": "Buy a soska",
       "date": "2024-07-26",
-      "userId": "d013"
+      "userId": "2ace"
+    },
+    {
+      "id": "c48c",
+      "transition": "humo",
+      "amount": "30000",
+      "category": "Buy a soska",
+      "date": "2024-07-26",
+      "userId": "2ace"
+    },
+    {
+      "id": "c48c",
+      "transition": "humo",
+      "amount": "30000",
+      "category": "Buy a soska",
+      "date": "2024-07-26",
+      "userId": "2ace"
     },
     {
       "id": "89cf",
@@ -70,7 +86,7 @@
       "amount": "25000",
       "category": "Buy a koka",
       "date": "2024-07-26",
-      "userId": "d013"
+      "userId": "2ace"
     },
     {
       "id": "e37b",

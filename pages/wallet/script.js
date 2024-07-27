@@ -1,6 +1,7 @@
 import { header } from "../../components/head";
 import { headTxt } from "../../components/headTxt";
-import { reloadWallet } from "../../libs/wallets";
+import { reload } from "../../components/reload";
+import { Wallet } from "../../libs/wallet";
 import { getData } from "/libs/http.js";
 header()
 headTxt()
@@ -20,8 +21,8 @@ function wallet(res) {
     email.innerText = res.email
 }
 
-getData("wallets" + "/" + ls)
-.then(res => reloadWallet(res.data))
+getData(`wallets?userId=${ls}`)
+.then(res => reload(res.data, "wallet", Wallet))
 .catch(error => console.log(error))
 
 let img = document.querySelector('.right img')

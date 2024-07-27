@@ -1,6 +1,6 @@
-export function reloadTrans(res) {
-
-    let trans = document.querySelector('table')
+export function Trans(item) {
+    let tem = document.createElement('div')
+    // let trans = document.querySelector('table')
     let headerRow = document.createElement('tr')
     let one = document.createElement('th')
     let two = document.createElement('th')
@@ -21,13 +21,11 @@ export function reloadTrans(res) {
     four.innerText = "Сумма транзации"
     five.innerText = "Когда"
 
-    trans.append(headerRow)
-    headerRow.append(one, two, three, four, five)
-
-    res.forEach(res => {
+    // trans.append(headerRow)
+    // res.forEach(res => {
         let row = document.createElement('tr');
 
-        let idCell = document.createElement('td')
+        let idCell = document.createElement('td');
 
         let walletCell = document.createElement('td');
         let categoryCell = document.createElement('td');
@@ -35,13 +33,19 @@ export function reloadTrans(res) {
         let dateCell = document.createElement('td');
 
 
-        idCell.innerText = res.id;
-        walletCell.innerText = res.transition;
-        categoryCell.innerText = res.category;
-        amountCell.innerText = res.amount;
-        dateCell.innerText = res.date;
+        idCell.innerText = item.id;
+        walletCell.innerText = item.transition;
+        categoryCell.innerText = item.category;
+        amountCell.innerText = item.amount;
+        dateCell.innerText = item.date;
 
-        trans.append(row)
-        row.append(idCell, walletCell, categoryCell, amountCell, dateCell)
-    });
+        // trans.append(row)
+
+        // return row
+    // });
+    tem.append(headerRow, row)
+    headerRow.append(one, two, three, four, five)
+    row.append(idCell, walletCell, categoryCell, amountCell, dateCell)
+
+    return tem
 }

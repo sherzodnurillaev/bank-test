@@ -1,7 +1,8 @@
 import { header } from "../../components/head";
 import { headTxt } from "../../components/headTxt";
-import { reloadTrans } from "../../libs/transicion";
+import { reload } from "../../components/reload";
 import { getData } from "../../libs/http";
+import { Trans } from "../../libs/trans";
 
 header()
 headTxt()
@@ -22,8 +23,8 @@ function wallet(res) {
     email.innerText = res.email
 }
 
-getData("transactions" + "/" + ls)
-.then(res => reloadTrans(res.data))
+getData(`transactions?userId=${ls}`)
+.then(res => reload(res.data, "table", Trans))
 .catch(error => console.log(error))
 
 let img = document.querySelector('.right img')

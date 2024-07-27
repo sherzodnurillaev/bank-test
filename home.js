@@ -1,7 +1,8 @@
 import { header } from "./components/head.js";
-import { reloadTrans } from "./libs/transicion.js";
-import { reloadWallet } from "./libs/wallets.js";
 import { getData } from "./libs/http.js";
+import { reload } from "./components/reload.js";
+import { Trans } from "./libs/trans.js";
+import { Wallet } from "./libs/wallet.js";
 header()
 
 let token = localStorage.getItem("token")
@@ -17,12 +18,12 @@ getData("users" + '/' + ls)
 })
 .catch(error => console.log(error))
 
-getData("wallets")
-.then(res => reloadWallet(res.data))
+getData(`wallets?userId=${ls}`)
+.then(res => reload(res.data, "wallet", Wallet))
 .catch(error => console.log(error))
 
-getData("transactions")
-.then(res => reloadTrans(res.data))
+getData(`transactions?userId=${ls}`)
+.then(res => reload(res.data, "table", Trans))
 .catch(error => console.log(error))
 
 function data(res) {
